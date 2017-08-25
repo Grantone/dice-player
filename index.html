@@ -4,64 +4,61 @@
 <head>
   <meta charset="utf-8">
   <title>Dice Player</title>
-  <link rel="stylesheet" href="css/bootsrap.css">
-  <link rel="stylesheet" href="css/styless.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/stylesfdffs.css">
   <script src="js.bootstrap-3.2.1.min.js"></script>
   <script src="js.scripts.js"></script>
 
 </head>
 
 <body>
-  <div class="container back">
-    <h1>PIG-DICE GAME</h1>
-    <form id="pig-dice game">
-      <div class="row">
-        <div class="col-md-6 Rules">
-          <h2>Game Description</h2>
-          <p>Pig is a simple dice game which in its basic form is playable with just a single die.<br> You win by being the first player to score 100 or more points.<br> To play you'll need 2 to 10 players, one 6-sided dice, and a pencil and some paper for
-            keeping score.</p>
-        </div>
+  <h1>PIG-DICE GAME</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 Rules">
+        <form>
+          <div class="form-group">
+            <label for="firstPlayer">Fisrt Player:</label>
+            <input type="text" class="form-control" id="txt">
+          </div>
+          <div class="form-group">
+            <label for="secondPlayer">Second Player:</label>
+            <input type="text" class="form-control" id="txt">
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6 Rules">
         <h2>Rules</h2>
         <p>A 1 is rolled.<br> The player chooses to hold (stop rolling).<br> If a 1 is rolled, that player's turn ends and no points are earned.<br> If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
       </div>
-  </div>
-  <h2>Player 1</h2>
-  <div class="col-xs-4">
-    <h3>Rolled Dice</h3>
-    <h1 id="rolled-number">#</h1>
-    <h3>Possible Points</h3>
-    <h1 id="rolled-total">0</h1>
-    <button id="roll" class="btn btn-primary">Roll</button>
-    <button id="hold" class="btn" disabled="true">Hold</button>
-    <div class="col-xs-4">
-      <h3>Player 1:</h3>
-      <h4 id="player-two-name"></h4>
-      <p>Score:</p>
-      <p><span class="p2-total-score"></span></p>
-      </form>
     </div>
   </div>
-  <div>
-    <h2>Player 2</h2>
-    <div class="col-xs-4">
-      <h3>Rolled Dice</h3>
-      <h1 id="rolled-number">#</h1>
-      <h3>Possible Points</h3>
-      <h1 id="rolled-total">0</h1>
-      <button id="roll" class="btn btn-primary">Roll</button>
-      <button id="hold" class="btn" disabled="true">Hold</button>
-      <div class="col-xs-4">
-        <h3>Player 2:</h3>
-        <h4 id="player-two-name"></h4>
-        <p>Score:</p>
-        <p><span class="p2-total-score"></span></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 two">
+        <h2>Player 1</h2>
+        <h3>Rolled Dice</h3>
+        <h1 id="rolled-number">#</h1>
+        <h3>Possible Points</h3>
+        <h1 id="rolled-total">0</h1>
+        <button id="roll" class="btn btn-primary">Roll</button>
+        <button id="hold" class="btn" disabled="true">Hold</button>
+      </div>
+
+      <div class="col-md-6 two">
+        <h2>Player 2</h2>
+        <h3>Rolled Dice</h3>
+        <h1 id="rolled-number">#</h1>
+        <h3>Possible Points</h3>
+        <h1 id="rolled-total">0</h1>
+        <button id="roll" class="btn btn-primary">Roll</button>
+        <button id="hold" class="btn" disabled="true">Hold</button>
       </div>
     </div>
-    </form>
   </div>
-
-  </div>
-
 </body>
 
 </html>

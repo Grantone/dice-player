@@ -8,3 +8,11 @@
   float: left;
   background-color: #808000;
 }
+.hi {
+
+}
+header {
+    background-image: url(..img/dice.jpg);
+    background: cover;
+    height: 100px;
+}
