@@ -1,0 +1,10 @@
+.h1 {
+  text-align: center;
+  padding: 80px;
+  background-image: url(..img/dice.jpg);
+  color: skyblue;
+}
+.sidebar {
+  float: left;
+  background-color: #808000;
+}
